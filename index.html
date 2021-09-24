@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/toolbar-default.css">
+  <link rel="stylesheet" href="./css/sandalstrap.css">
+  <link rel="stylesheet" href="./css/detail-enter.css">
+  
+  <link rel="stylesheet" href="./css/enter.css">
+</head>
+
+<body class='nodata'>
+  <div id="csdn-toolbar" style="position: relative; top: 0px; left: 0px; width: 100%;">
+    <div class="toolbar-inside">
+      <div class="toolbar-container">
+        <div class="toolbar-container-left">
+          <div class="toolbar-logo toolbar-subMenu-box csdn-toolbar-fl"><a href="https://www.csdn.net/">
+              <img title="CSDN首页" src="./images/20201124032511.png"></a>
+          </div>
+          <ul class="toolbar-menus csdn-toolbar-fl">
+            <li class="active " title="阅读深度、前沿文章">
+              <a href="https://blog.csdn.net/">
+                博客
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="马上开始系统学习">
+              <a href="https://edu.csdn.net/">
+                专栏课程
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="获取源码、文档、学习资源">
+              <a href="https://download.csdn.net/">
+                下载
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="技术问题，有问必答">
+              <a href="https://ask.csdn.net/">
+                问答
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="找到志同道合的伙伴">
+              <a href="https://bbs.csdn.net/">
+                社区
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="安装你的浏览器助手">
+              <a href=" https://t.csdnimg.cn/Jd6W">
+                插件
+
+
+              </a>
+
+
+            </li>
+            <li class="" title="认证你的技术能力">
+              <a href="https://ac.csdn.net/?short_code=13271b93">
+                认证
+
+
+              </a>
+
+
+            </li>
+          </ul>
+        </div>
+        <div class="toolbar-container-middle">
+          <div class="toolbar-search onlySearch">
+            <div class="toolbar-search-container">
+              <input id="toolbar-search-input" autocomplete="off" type="text" value="" placeholder="微信">
+              <button id="toolbar-search-button"><i></i><span>搜索</span></button>
+              <input type="password" autocomplete="new-password" readonly="" disabled="true"
+                style="display: none; position:absolute;left:-9999999px;width:0;height:0;">
+            </div>
+          </div>
+        </div>
+        <div class="toolbar-container-right">
+          <div class="toolbar-btns onlyUser">
+            <div class="toolbar-btn toolbar-btn-login csdn-toolbar-fl ">
+              <a href="https://passport.csdn.net/account/login">登录/注册</a>
+            </div>
+            <div class="toolbar-btn toolbar-btn-vip csdn-toolbar-fl">
+              <a href="https://mall.csdn.net/vip">会员中心 <img
+                  style="position: relative; vertical-align: middle; width: 14px; top: -1px; left: 0px;;display:inline-block"
+                  src="./images/20210918025138.gif"></a>
+            </div>
+            <div class="toolbar-btn toolbar-btn-collect csdn-toolbar-fl">
+              <a href="https://i.csdn.net/#/user-center/collection-list?type=1">收藏</a>
+            </div>
+            <div class="toolbar-btn csdn-toolbar-fl"><a href="https://blink.csdn.net">动态</a></div>
+
+            <div class="toolbar-btn toolbar-btn-write csdn-toolbar-fl ">
+              <a href="https://mp.csdn.net"><i></i>创作<i></i></a>
+
+              <div id="csdn-toolbar-write" class="csdn-toolbar-plugin" style="display: none;">
+                <div class="csdn-toolbar-plugin-triangle"></div>
+                <ul class="csdn-toolbar-write-box">
+                  <li class="csdn-toolbar-write-box-blog">
+                    <a href="https://mp.csdn.net/edit" target="_blank">
+                      <i class="csdn-toolbar-write-icon"></i>
+                      <span>写文章</span>
+                    </a>
+                  </li>
+                  <li class="csdn-toolbar-write-box-blink">
+                    <a href="https://blink.csdn.net" target="_blank">
+                      <i class="csdn-toolbar-write-icon"></i>
+                      <span>发Blink</span>
+                    </a>
+                  </li>
+                  <li class="csdn-toolbar-write-box-ask">
+                    <a href="https://ask.csdn.net/new?word=" target="_blank">
+                      <i class="csdn-toolbar-write-icon"></i>
+                      <span>提问题</span>
+                    </a>
+                  </li>
+                  <li class="csdn-toolbar-write-box-upload">
+                    <a href="https://mp.csdn.net/mp_download/creation/uploadResources" target="_blank">
+                      <i class="csdn-toolbar-write-icon"></i>
+                      <span>传资源</span>
+                    </a>
+                  </li>
+                  <li class="csdn-toolbar-write-box-code">
+                    <a href="https://codechina.csdn.net/explore" target="_blank">
+                      <i class="csdn-toolbar-write-icon"></i>
+                      <span>建项目</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="csdn-toolbar-write-activity">
+                  <div class="csdn-toolbar-write-activity-head"><span>创作活动</span><a
+                      href="https://mp.csdn.net/mp_blog/manage/creative?spm=1011.2124.3001.5311"
+                      target="_blank">更多<i></i></a></div>
+                  <ul>
+                    <li>
+                      <a href="https://marketing.csdn.net/p/98bd30353e7cb998b6070a89e8b91edb"
+                        target="_blank">#炫“库”行动-人大金仓征文大赛</a>
+                    </li>
+
+                    <li>
+                      <a href="https://bbs.csdn.net/topics/600480355" target="_blank">#C站英豪榜之「Python」有奖征文 </a>
+                    </li>
+                  </ul>
+                  <div class="toolbar-write-activity-more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_father clearfix d-flex justify-content-center" style="height: auto !important;">
+    <div class="container clearfix" id="mainBox">
+      <main>
+        <div class="blog-content-box">
+          <div class="article-header-box">
+            <div class="article-header">
+              <div class="article-title-box">
+                <h1 class="title-article" id="articleContentId">极客日报：贾跃亭称FF 91投票战胜三大豪车；苹果正式推送iOS 15系统；欧盟或强制电子设备使用通用充电器
+                </h1>
+              </div>
+              <div class="article-info-box">
+                <div class="article-bar-top">
+                  <img class="article-type-img" src="./images/original.png" alt="">
+                  <div class="bar-content">
+                    <a class="follow-nickName vip-name" href="https://blog.csdn.net/weixin_39786569" target="_blank"
+                      rel="noopener">极客日报</a>
+                    <span class="time">2021-09-22 09:36:49</span>
+                    <img class="article-read-img article-heard-img" src="./images/articleReadEyes.png" alt="">
+                    <span class="read-count">979</span>
+                    <a id="blog_detail_zk_collection" class="un-collection">
+                      <img class="article-collect-img article-heard-img un-collect-status isdefault"
+                        style="display:inline-block" src="./images/tobarCollect.png" alt="">
+                      <!-- <img class="article-collect-img article-heard-img collect-status isactive" style="display:none"
+                        src="./images/tobarCollectionActive.png" alt=""> -->
+                      <span class="name">收藏</span>
+                      <span class="get-collection">
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-tags-box">
+                  <div class="tags-box artic-tag-box">
+                    <span class="label">分类专栏：</span>
+                    <a class="tag-link" href="https://blog.csdn.net/weixin_39786569/category_10562829.html"
+                      target="_blank" rel="noopener">极客日报</a>
+                    <span class="label">文章标签：</span>
+                    <a class="tag-link" href="https://www.csdn.net/tags/MtzaIgwsNDIwNjQtYmxvZwO0O0OO0O0O.html"
+                      target="_blank" rel="noopener">微信</a>
+                  </div>
+                </div>
+                <div class="slide-content-box">
+                  <div class="article-copyright">
+                    <div class="creativecommons">
+                      版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                        rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
+                    </div>
+                    <div class="article-source-link">
+                      本文链接：<a href="https://blog.csdn.net/csdngeeknews/article/details/120408914"
+                        target="_blank">https://blog.csdn.net/csdngeeknews/article/details/120408914</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="operating">
+                  <a class="href-article-edit slide-toggle">版权</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="blogColumnPayAdvert">
+            <div class="column-group">
+              <div class="column-group-item column-group0 column-group-item-one">
+                <div class="item-l">
+                  <a class="item-target" href="https://blog.csdn.net/weixin_39786569/category_10562829.html"
+                    target="_blank" title="极客日报">
+                    <img class="item-target"
+                      src="./images/20201014180756928.png"
+                      alt="">
+                    <span class="title item-target">极客日报</span>
+                  </a>
+                  <span class="dec">专栏收录该内容</span>
+                </div>
+                <div class="item-m">
+                  <span>204 篇文章</span>
+                  <span>393 订阅</span>
+                </div>
+                <div class="item-r">
+                  <a class="item-target article-column-bt articleColumnFreeBt" data-id="10562829">订阅专栏</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <article class="baidu_pl">
+            <input type="file" id="file">
+            <h2>Rendered pdf:</h2>
+            <canvas id="pdfCanvas" width="840" height="900"></canvas>
+          </article>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+          <script>
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.js';
+            document.getElementById('file').onchange = function(event) {
+              var file = event.target.files[0];
+              var fileReader = new FileReader();
+              console.log(file,fileReader)
+              fileReader.onload = function() {
+                var typedarray = new Uint8Array(this.result);
+                console.log(typedarray);
+                const loadingTask = pdfjsLib.getDocument(typedarray);
+                loadingTask.promise.then(pdf => {
+                  // The document is loaded here...
+                  //This below is just for demonstration purposes showing that it works with the moderen api
+                  
+                  pdf.getPage(2).then(function(page) {
+                    console.log('Page loaded');
+
+                    var scale = 1.5;
+                    var viewport = page.getViewport({
+                      scale: scale
+                    });
+
+                    var canvas = document.getElementById('pdfCanvas');
+                    var context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = 840;
+
+                    // Render PDF page into canvas context
+                    var renderContext = {
+                      canvasContext: context,
+                      viewport: viewport
+                    };
+                    var renderTask = page.render(renderContext);
+                    renderTask.promise.then(function() {
+                      console.log('Page rendered');
+                    });
+
+                  });
+                  //end of example code
+                });
+
+              }
+              fileReader.readAsArrayBuffer(file);
+            }
+          </script>
+        </div>
+        <!-- <div class="more-toolbox-new more-toolbox-active" id="toolBarBox">
+          <div class="left-toolbox" style="position: fixed; z-index: 999; left: 370px; bottom: 0px; width: 820px;">
+            <div class="toolbox-left">
+              <div class="profile-box"><a class="profile-href" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569"><img class="profile-img"
+                    src="https://profile.csdnimg.cn/B/9/1/3_weixin_39786569"><span class="profile-name">极客日报</span></a>
+              </div>
+              <div class="profile-attend">
+                <a class="tool-attend tool-bt-button tool-bt-attend" href="javascript:;">关注</a>
+                <a class="tool-item-follow active-animation" style="display:none;">关注</a>
+              </div>
+            </div>
+            <div class="toolbox-middle">
+              <ul class="toolbox-list">
+                <li class="tool-item tool-item-size tool-active is-like" id="is-like">
+                  <a class="tool-item-href">
+                    <img style="display:none;" id="is-like-imgactive-animation-like"
+                      class="animation-dom active-animation" src="./images/tobarThumbUpactive.png" alt="">
+                    <img class="isactive" style="display:none" id="is-like-imgactive" src="./images/newHeart1Active.png"
+                      alt="">
+                    <img class="isdefault" style="display:block" id="is-like-img" src="./images/newHeart1White.png"
+                      alt="">
+                    <span id="spanCount" class="count " style="color: rgb(153, 154, 170);">
+                      1
+                    </span>
+                  </a>
+                  <div class="tool-hover-tip"><span class="text space">点赞</span></div>
+                </li>
+                <li class="tool-item tool-item-size tool-active tool-item-comment">
+                  <a class="tool-item-href" href="#commentBox">
+                    <img class="isdefault" src="./images/newCommentWhite.png" alt="">
+                    <span class="count">
+                      1
+                    </span>
+                  </a>
+                  <div class="tool-hover-tip"><span class="text space">评论</span></div>
+                </li>
+                <li class="tool-item tool-item-size tool-active is-collection ">
+                  <a class="tool-item-href" href="javascript:;">
+                    <img style="display:none" id="is-collection-img-collection" class="animation-dom active-animation"
+                      src="./images/tobarCollectionActive.png" alt="">
+                    <img class="isdefault" id="is-collection-img" style="display:block"
+                      src="./images/newCollectWhite.png" alt="">
+                    <img class="isactive" id="is-collection-imgactive" style="display:none"
+                      src="./images/newCollectActive.png" alt="">
+                    <span class="count get-collection " id="get-collection" style="color: rgb(153, 154, 170);">
+                      0
+                    </span>
+                  </a>
+                  <div class="tool-hover-tip"><span class="text space">收藏</span></div>
+                </li>
+                <li class="tool-item tool-active">
+                  <a class="" href="javascript:;">
+                    <img class="company active" id="health-companies" src="./images/newHealthCompanies1Active.gif"
+                      alt="一键三连">
+                  </a>
+                  <div class="tool-hover-tip three-click"><span class="text">一键三连</span></div>
+                </li>
+                <li class="tool-item tool-item-bar">
+                </li>
+                <li class="tool-item tool-item-size tool-active tool-QRcode" id="tool-share">
+                  <a class="tool-item-href" href="javascript:;">
+                    <img class="isdefault" src="./images/newShareWhite.png" alt="">
+                  </a>
+                  <div class="QRcode" id="tool-QRcode" style="display: none;">
+                    <p class="title">
+                      扫一扫，分享海报
+                    </p>
+                    <div id="shareCode"
+                      title="https://blog.csdn.net/weixin_39786569/article/shareArticleCardPage?article_id=120408914&amp;utm_source=po_popup">
+                      <canvas width="144" height="144" style="display: none;"></canvas><img
+                        src="data:image/png;base64,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"
+                        style="display: block;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="toolbox-right">
+              <div class="tool-directory">
+                <a class="bt-columnlist-show" data-id="10562829" data-free="true" data-subscribe="false"
+                  data-title="极客日报"
+                  data-img="./images/20201014180756928.png"
+                  data-url="https://blog.csdn.net/weixin_39786569/category_10562829.html" data-sum="204"
+                  data-people="393" data-price="0" data-oldprice="0" data-join="false" data-studyvip="false"
+                  data-studysubscribe="false">专栏目录</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <script type="text/javascript" crossorigin=""
+          src="https://csdnimg.cn/release/phoenix/production/qrcode-7c90a92189.min.js"></script>
+        <script src="//g.csdnimg.cn/??sharewx/1.2.1/sharewx.js" type="text/javascript"></script>
+        <script type="text/javascript" crossorigin=""
+          src="https://g.csdnimg.cn/user-login/3.0.1/user-login.js"></script>
+        <script type="text/javascript" crossorigin=""
+          src="https://g.csdnimg.cn/collection-box/2.0.6/collection-box.js"></script> -->
+        <div class="first-recommend-box recommend-box">
+          <div class="recommend-item-box type_download clearfix"
+            data-url="https://download.csdn.net/download/lvlei19911108/20829210">
+            <div class="content-box">
+              <div class="content-blog display-flex">
+                <div class="title-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20829210" class="tit" target="_blank">
+                    <div class="left ellipsis-online ellipsis-online-1">
+                      <em>贾跃亭</em>造<em>车</em>实验室首曝光：正积极推进<em>FF</em><em>91</em>量产工作.pdf</div>
+                  </a>
+                </div>
+                <div class="info-box display-flex">
+                  <div class="info display-flex">
+                    <span class="info-block">08-07</span>
+                  </div>
+                </div>
+              </div>
+              <div class="desc-box">
+                <a href="https://download.csdn.net/download/lvlei19911108/20829210" target="_blank">
+                  <div class="desc ellipsis-online ellipsis-online-1">
+                    <em>贾跃亭</em>造<em>车</em>实验室首曝光：正积极推进<em>FF</em><em>91</em>量产工作.pdf</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-recommend-box recommend-box">
+          <div class="recommend-item-box type_download clearfix"
+            data-url="https://download.csdn.net/download/lvlei19911108/20831905">
+            <div class="content-box">
+              <div class="content-blog display-flex">
+                <div class="title-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20831905" class="tit" target="_blank">
+                    <div class="left ellipsis-online ellipsis-online-1">首次亮相！法拉第未来公布<em>FF</em>
+                      <em>91</em>内饰图：<em>贾跃亭</em>心血没白费.pdf</div>
+                  </a>
+                </div>
+                <div class="info-box display-flex">
+                  <div class="info display-flex">
+                    <span class="info-block">08-07</span>
+                  </div>
+                </div>
+              </div>
+              <div class="desc-box">
+                <a href="https://download.csdn.net/download/lvlei19911108/20831905" target="_blank">
+                  <div class="desc ellipsis-online ellipsis-online-1">首次亮相！法拉第未来公布<em>FF</em>
+                    <em>91</em>内饰图：<em>贾跃亭</em>心血没白费.pdf</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="commentBox" name="commentBox"></a>
+        <div class="comment-box">
+          <div class="comment-edit-box d-flex">
+            <a id="commentsedit"></a>
+            <div class="user-img">
+              <a href="javascript:void(0);">
+                <img class="show_loginbox" src="https://g.csdnimg.cn/static/user-img/anonymous-User-img.png">
+              </a>
+            </div>
+            <form id="commentform">
+
+              <textarea class="comment-content" name="comment_content" id="comment_content"
+                placeholder="优质评论可以帮助作者获得更高权重" maxlength="1000"></textarea>
+              <div class="comment-emoticon"><img class="comment-emoticon-img" data-url="./images/"
+                  src="./images/emoticon.png" alt="表情包"></div>
+              <span class="comment-emoticon-tip">插入表情</span>
+              <div class="comment-emoticon-box" style="display: none;">
+                <div class="comment-emoticon-img-box"></div>
+              </div>
+              <div class="opt-box">
+                <div id="ubbtools" class="add_code">
+                  <a href="#insertcode" code="code" target="_self"><i class="icon iconfont icon-daima"></i></a>
+                </div>
+                <input type="hidden" id="comment_replyId" name="comment_replyId">
+                <input type="hidden" id="article_id" name="article_id" value="120408914">
+                <input type="hidden" id="comment_userId" name="comment_userId" value="">
+                <input type="hidden" id="commentId" name="commentId" value="">
+                <div class="dropdown" id="myDrap">
+                  <a class="dropdown-face d-flex align-items-center" data-toggle="dropdown" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                    <div class="txt-selected text-truncate">添加代码片</div>
+                    <svg class="icon d-block" width="200px" height="100.00px" viewBox="0 0 2048 1024" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M597.33333292 298.666667h853.333334L1023.99999992 725.333333 597.33333292 298.666667z">
+                      </path>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu" id="commentCode" aria-labelledby="drop4">
+                    <li><a data-code="html">HTML/XML</a></li>
+                    <li><a data-code="objc">objective-c</a></li>
+                    <li><a data-code="ruby">Ruby</a></li>
+                    <li><a data-code="php">PHP</a></li>
+                    <li><a data-code="csharp">C</a></li>
+                    <li><a data-code="cpp">C++</a></li>
+                    <li><a data-code="javascript">JavaScript</a></li>
+                    <li><a data-code="python">Python</a></li>
+                    <li><a data-code="java">Java</a></li>
+                    <li><a data-code="css">CSS</a></li>
+                    <li><a data-code="sql">SQL</a></li>
+                    <li><a data-code="plain">其它</a></li>
+                  </ul>
+                </div>
+                <div class="right-box" id="rightBox" data-type="2">
+                  <span id="tip_comment" class="tip">还能输入<em>1000</em>个字符</span>
+                  <a><input type="submit" class="btn btn-sm btn-comment" value="发表评论"></a>
+                </div>
+              </div>
+            </form>
+            <input type="button" class="bt-comment-show" value="评论">
+          </div>
+          <div class="comment-list-container" style="display: block;">
+            <a id="comments"></a>
+            <div class="comment-list-box" style="overflow: hidden; max-height: none;">
+              <ul class="comment-list">
+                <li class="comment-line-box d-flex" data-commentid="18383658" data-replyname="qq_38338428">
+                  <div style="display: flex;width: 100%;"> <a target="_blank"
+                      href="https://blog.csdn.net/qq_38338428"><img src="https://profile.csdnimg.cn/7/2/F/3_qq_38338428"
+                        username="qq_38338428" alt="qq_38338428" class="avatar"></a>
+                    <div class="right-box ">
+                      <div class="new-info-box clearfix"> <a target="_blank"
+                          href="https://blog.csdn.net/qq_38338428"><span class="name ">WeYoung.Tian</span></a><span
+                          class="colon">:</span><span class="floor-num"></span><span
+                          class="new-comment">罗永浩吐槽微信广告：封面图与实际内容不符
+                          9月20日，罗永浩发布微博讨论微信朋友圈广告问题。罗永浩表示，其不愿意点开微信广告的一个原因是，品牌方编辑的6~9张缩略广告图有时候确实会有吸引力，但点进去几乎一定看不到那几张图的放大版本，无论是汽车、电子产品还是球鞋都是这样。吐槽“不知道编辑那些页面的品牌方工作人员是怎么想的”。（快科技）
+
+
+
+                          确实，微信里面太严重了，进去各种不符合，噱头太多了。其他平台也存在这种现象。</span><span class="date" title="2021-09-22 10:36:38">2
+                          小时前</span><span class="new-opt-floating"><a class="btn-bt  btn-reply" data-type="reply"
+                            data-flag="true">回复</a><a class="btn-bt  btn-report">
+                              <!-- <img class="btn-report-img"
+                              src="./images/commentMore.png" title=""> -->
+                              <span data-type="report"
+                              class="hide-report">举报</span></a></span></div>
+                      <div class="comment-like " data-commentid="18383658">
+                        <!-- <img class="comment-like-img unclickImg"
+                          src="./images/commentUnHeart.png" title="点赞"> -->
+                          <img
+                          class="comment-like-img comment-like-img-hover" style="display:none"
+                          src="./images/commentActiveHeart.png" title="点赞"><img class="comment-like-img clickedImg"
+                          src="./images/commentActiveHeart.png" title="点赞"><span></span></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="commentPage" class="pagination-box d-none" style="display: block;">
+              <div id="Paging_035546118409610283" class="ui-paging-container">
+                <ul>
+                  <li class="js-page-first js-page-action ui-pager ui-pager-disabled"></li>
+                  <li class="js-page-prev js-page-action ui-pager ui-pager-disabled">&lt;</li>
+                  <li data-page="1" class="ui-pager focus">1</li>
+                  <li class="js-page-next js-page-action ui-pager ui-pager-disabled">&gt;</li>
+                  <li class="js-page-last js-page-action ui-pager ui-pager-disabled"></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="recommend-box insert-baidu-box">
+          <div class="recommend-item-box clearfix" style="display:none"></div>
+          <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+            <div class="content-box">
+              <div class="content-blog display-flex">
+                <div class="title-box"> <a class="tit" href="https://blog.csdn.net/techweb/article/details/120407994"
+                    target="_blank">
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>债务处理小组:债务净额约为20亿美金
+                      <em>苹果</em>回应向腾讯传输数据:是标记恶意网站的安全功能 Google 宣布将 AMP 项目交给 OpenJS 基金会 天风国际郭明錤:<em>苹果</em>明年一季度将发售iPhone
+                      SE2,售价399美元起 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/jiebing2020/21932500">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/jiebing2020/21932500" class="tit" target="_blank">
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>贾跃亭</em>的翻身牌？法拉第电动汽<em>车</em><em>FF</em><em>91</em>.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">09-04</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/jiebing2020/21932500" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">
+                      <em>贾跃亭</em>的翻身牌？法拉第电动汽<em>车</em><em>FF</em><em>91</em>.pdf</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20829464">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20829464" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>成了，<em>FF</em>
+                        <em>91</em>预量产<em>车</em>下线完成.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-07</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20829464" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>成了，<em>FF</em>
+                      <em>91</em>预量产<em>车</em>下线完成.pdf</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit"
+                      href="https://blog.csdn.net/weixin_39786569/article/details/90171543" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">...提高京东员工净收入;IntelliJ IDEA 新版发布!_<em>极客日报</em>
+                      </div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">7-13</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/weixin_39786569/article/details/90171543"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>将回国接受调查?乐视网:未收到其行程安排
+                      华为杨超斌:5G千元机最快于明年底上市 360天御推出“IoT守护计划” 工程师泄密<em>iOS</em> 13升级名单:<em>苹果</em>欲放弃多款老机型
+                      谷歌员工提四项要求,希望佩奇出面解决问题 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit"
+                      href="https://blog.csdn.net/weixin_39786569/article/details/100533412" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">...App「ZAO」致歉; Android 10
+                        <em>正式</em>发布_<em>极客日报</em></div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">7-14</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/weixin_39786569/article/details/100533412"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>辞去法拉第未来CEO,原拜腾CEO毕福康接任
+                      <em>苹果</em>开发蓝牙追踪器:用AR帮你寻找失物 Android 10 <em>正式</em>发布 Facebook证实将试验不显示点赞数
+                      特斯拉App突然瘫痪,大批<em>车</em>主没法上<em>车</em> 亚马逊测试人手支付,全程仅0.3秒 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/techweb/article/details/102597377">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/techweb/article/details/102597377" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>苹果</em><em>推送</em><em>iOS</em>13.1.3更新：<em>iOS</em>13发布仅一个月疯狂补Bug</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/techweb" target="_blank"><span
+                          class="blog-title">软件开发资料汇总</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">10-16</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        84
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/techweb/article/details/102597377" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">10月16日，<em>苹果</em><em>推送</em>了<em>iOS</em> 13.1
+                      .3<em>系统</em>升级，主要包括针对iPad和iPhone的错误修复和改进，而这也是<em>iOS</em> 13发布仅一个月以来<em>推送</em>的第四个升级补丁。具体...
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20831573">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20831573" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">下周开<em>FF</em>
+                        <em>91</em>回国？<em>贾跃亭</em>出席听证会否认隐匿资产 考虑回国量产<em>FF</em> <em>91</em>.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-07</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20831573" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">下周开<em>FF</em>
+                      <em>91</em>回国？<em>贾跃亭</em>出席听证会否认隐匿资产 考虑回国量产<em>FF</em> <em>91</em>.pdf</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit"
+                      href="https://blog.csdn.net/weixin_39786569/article/details/102695210" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">...回应<em>贾跃亭</em>破产;Chrome
+                        78发布|极客头条_<em>极客日报</em></div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">8-15</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/weixin_39786569/article/details/102695210"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">乐视网回应<em>贾跃亭</em>破产重组:未因债务解决方案获得任何现金
+                      《2019腾讯区块链白皮书》:中国区块链公司数量连续两年增幅超250% <em>苹果</em><em>iOS</em> 13更新导致部分iPhone 11系列用户无法使用AirDrop功能
+                      LG为iPhone SE 2提供LCD显示屏 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit" href="https://blog.csdn.net/csdnnews/article/details/104912588"
+                      target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>苹果</em>或已放弃3月发布廉价新iPhone;<em>贾跃亭</em>回应家人巨额...</div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">7-16</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/csdnnews/article/details/104912588"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">CSDN
+                      的读者朋友们早上好哇,「极客头条」来啦,快来看今天都有哪些值得我们技术人关注的重要新闻吧。 一分钟速览新闻点! 百度上线防疫信息码2.0,保证出行安全
+                      <em>贾跃亭</em>回应家人巨额索赔:40多亿是联合担保,无<em>投票</em>权 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/techweb/article/details/103169151">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/techweb/article/details/103169151" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">首次亮相！法拉第未来公布<em>FF</em>
+                        <em>91</em>内饰图：<em>贾跃亭</em>心血没白费</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/techweb" target="_blank"><span
+                          class="blog-title">软件开发资料汇总</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">11-20</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        273
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/techweb/article/details/103169151" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">
+                      11月20日消息，据国外媒体报道，当地时间周二，由<em>贾跃亭</em>创办的美国电动汽<em>车</em>初创企业法拉第未来（Faraday
+                      Future，简<em>称</em><em>FF</em>）公布了其首款电动汽<em>车</em><em>FF</em>
+                      <em>91</em>的内饰图，并透露了有关它的更多细节。<em>FF</em>
+                      <em>91</em>是基于法拉第未来的可变平台架构（VPA）打造的，代表了一种大胆的新型电动汽<em>车</em>，它结合了超级跑<em>车</em>的性能、精确的操控、超豪华乘用<em>车</em>的舒适性，以及独特的智能互联网功能。法拉第未来<em>称</em><em>FF</em>
+                      <em>91</em>为“第...</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/beiduocaijing/article/details/119045044">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/beiduocaijing/article/details/119045044" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>贾跃亭</em>续写造<em>车</em>梦：历经一波<em>三</em>折，<em>FF</em>实现上市，交<em>车</em>不远了？</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/beiduocaijing" target="_blank"><span
+                          class="blog-title">beiduocaijing的博客</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">07-23</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        54
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/beiduocaijing/article/details/119045044" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">
+                      说起来你可能不信，原乐视网创始人<em>贾跃亭</em>在美国创立的电动汽<em>车</em>品牌Faraday Future
+                      （下<em>称</em>“<em>FF</em>”，中文名为“法拉第未来”）上市了。
+
+
+
+                      7月22日，<em>FF</em>在美国纳斯达克挂牌上市，股票代码为<em>FF</em>IE。据了解，<em>FF</em>的发行价为13.78美元/股，开盘价为16.84美元/股。上市首日，<em>FF</em>收报13.98美元/股，涨幅为1.45%。
+
+
+
+
+
+                      收盘价计算，<em>FF</em>的总市值为45.11亿美元。贝多财经发现，<em>FF</em>的股价在7月22日盘前的涨幅曾一度扩大至50%。而在开盘后，<em>FF</em>也曾一度跌破发行价，但最终的收盘价高于.
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit" href="https://blog.csdn.net/csdnnews/article/details/102714081"
+                      target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>微信</em>支付宝关闭<em>三</em>星Galaxy指纹支付;乐视网回应<em>贾跃亭</em>破...</div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">7-19</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/csdnnews/article/details/102714081"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">乐视网回应<em>贾跃亭</em>破产重组:未因债务解决方案获得任何现金
+                      《2019腾讯区块链白皮书》:中国区块链公司数量连续两年增幅超250% <em>苹果</em><em>iOS</em> 13更新导致部分iPhone 11系列用户无法使用AirDrop功能
+                      LG为iPhone SE 2提供LCD显示屏 ...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box baiduSearch clearfix" data-type="blog">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box"> <a class="tit"
+                      href="https://blog.csdn.net/weixin_45443931/article/details/102752379" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">支付宝招“找茬”程序员,年薪无上限;俞渝深夜控诉李国...</div>
+                    </a> </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex"> <span class="info-block">7-22</span> </div>
+                  </div>
+                </div>
+                <div class="desc-box"> <a href="https://blog.csdn.net/weixin_45443931/article/details/102752379"
+                    target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">
+                      乐视网在公告中<em>称</em>,<em>贾跃亭</em>应拿出切实可行的关联方债务问题处理方案;协助公司积极应诉乐视网违规担保案并向相关责任人实施追偿;履行向乐视网提供57亿元借款的承诺。
+                      与此同时,乐视网还发布澄清公告<em>称</em>,乐视网与大股东及其关联方债务处理没有...</div>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/techweb/article/details/95821339">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/techweb/article/details/95821339" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        <em>贾跃亭</em>造<em>车</em>实验室首曝光：正积极推进<em>FF</em><em>91</em>量产工作</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/techweb" target="_blank"><span
+                          class="blog-title">软件开发资料汇总</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">07-13</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        81
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/techweb/article/details/95821339" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">最新消息，最近美国一电视节目邀请著名演员David
+                      Hasselho<em>ff</em>参观了<em>FF</em>“FUTURIST TESTING LAB(未来主义者测试实验室)”，这也即是<em>FF</em>预量产...</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20830745">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20830745" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>：个人破产重组完成 不再持有<em>FF</em>股权.pdf
+                      </div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-07</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20830745" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>：个人破产重组完成 不再持有<em>FF</em>股权.pdf
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20829465">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20829465" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>发文祝父亲节快乐：<em>FF</em>就像我的孩子.pdf
+                      </div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-07</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20829465" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>发文祝父亲节快乐：<em>FF</em>就像我的孩子.pdf</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/weixin_45727359/article/details/113578081">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/weixin_45727359/article/details/113578081" class="tit"
+                      target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>发布最新PPT：<em>FF</em>商业计划书</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/weixin_45727359" target="_blank"><span
+                          class="blog-title">weixin_45727359的博客</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">02-03</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        543
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/weixin_45727359/article/details/113578081" target="_blank"
+                   >
+                    <div class="desc ellipsis-online ellipsis-online-1">
+                      完全颠覆人类对<em>车</em>的认知，是全新的物种——<em>贾跃亭</em>“下周回国”<em>贾跃亭</em>，似乎看到了回国的曙光。出乎大多数人的意料，落魄赴美的<em>贾跃亭</em>如今将“东山再起”。在<em>FF</em>的上市进程中，吉利控股与“国内某一线...
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/techweb/article/details/110943990">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/techweb/article/details/110943990" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>成了，<em>FF</em>
+                        <em>91</em>预量产<em>车</em>下线完成</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/techweb" target="_blank"><span
+                          class="blog-title">软件开发资料汇总</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">12-09</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        49
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/techweb/article/details/110943990" target="_blank"
+                   >
+                    <div class="desc ellipsis-online ellipsis-online-1">12月9日消息，<em>贾跃亭</em>旗下的法拉第未来（Faraday
+                      Future）在推特上发文<em>称</em>，<em>FF</em> <em>91</em>预量产<em>车</em>组装完成，将加入现有的测试队伍，帮助继续推进<em>FF</em>
+                      <em>91</em>项目。根据此前报道，<em>FF</em> 9...</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20829915">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20829915" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>的造<em>车</em>梦还在继续
+                        旗下<em>FF</em>在国内成立新公司.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-07</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20829915" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>贾跃亭</em>的造<em>车</em>梦还在继续
+                      旗下<em>FF</em>在国内成立新公司.pdf</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/weixin_33860553/article/details/86722216">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/weixin_33860553/article/details/86722216" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>贾跃亭</em>：<em>FF</em> <em>91</em>距离量产仅剩临门一脚
+                        准备好接受检验</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/weixin_33860553" target="_blank"><span
+                          class="blog-title">weixin_33860553的博客</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">01-31</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        129
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/weixin_33860553/article/details/86722216" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">雷帝网 乐天
+                      1月31日报道<em>FF</em>创始人<em>贾跃亭</em>今日在朋友圈中表示，在2019加州最佳科技创业公司评选中，<em>FF</em>和Uber、Lyft一同位列<em>三</em>甲。“后两者赢在共享经济理念下的商业模式创新，而<em>FF</em>是因为产品技术变革力和颠覆性创新力得到了肯定。”<em>贾跃亭</em>说，<em>FF</em>
+                      <em>91</em>作为<em>FF</em>创新的第一个成果，现在距离量产仅剩“临门一脚”，是时候准备好接受市场和用户的检验了。此前，<em>贾跃亭</em>与股东恒大之间曾展开绵绵不断的诉讼战，但...
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/22790572">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/22790572" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">
+                        没想到啊！<em>贾跃亭</em>又要去敲钟了：<em>FF</em>拟在纳斯达克上市.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">09-14</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/22790572" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">没想到啊！<em>贾跃亭</em>又要去敲钟了：<em>FF</em>拟在纳斯达克上市.pdf
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/lvlei19911108/20932709">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/lvlei19911108/20932709" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1"><em>FF</em>官宣新CFO推进融资和产品交付
+                        <em>贾跃亭</em>激动发声.pdf</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">08-09</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/lvlei19911108/20932709" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1"><em>FF</em>官宣新CFO推进融资和产品交付 <em>贾跃亭</em>激动发声.pdf
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_blog clearfix"
+              data-url="https://blog.csdn.net/weixin_34293911/article/details/89685546">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://blog.csdn.net/weixin_34293911/article/details/89685546" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">乐视<em>贾跃亭</em>：<em>FF</em>工厂不会缩水，力保<em>FF</em>
+                        <em>91</em>按时交付</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info">
+                      <a href="https://blog.csdn.net/weixin_34293911" target="_blank"><span
+                          class="blog-title">weixin_34293911的博客</span></a>
+                    </div>
+                    <div class="info display-flex">
+                      <span class="info-block time">03-06</span>
+                      <span class="info-block read"><img class="read-img" src="./images/readCountWhite.png" alt="">
+                        115
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://blog.csdn.net/weixin_34293911/article/details/89685546" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">未来<em>FF</em>将采用抢购的销售方式，但是前提是得有人抢。
+
+
+
+
+
+                      今天上午，乐视创始人、法拉第未来投资人（以下简<em>称</em><em>FF</em>）<em>贾跃亭</em>通过自己的微博社交账号宣布：“<em>FF</em>工厂不仅不会缩水，而且还会全力保证<em>FF</em>
+                      <em>91</em>的按时交付，期待<em>三</em>月底的抢购吧。”
+
+
+
+
+
+                      就在两天前，<em>FF</em>刚刚宣布：“内华达工厂的规模将大幅缩减，面积从最初计划的300万平方英尺降...</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="recommend-item-box type_download clearfix"
+              data-url="https://download.csdn.net/download/weixin_45365017/23959822">
+              <div class="content-box">
+                <div class="content-blog display-flex">
+                  <div class="title-box">
+                    <a href="https://download.csdn.net/download/weixin_45365017/23959822" class="tit" target="_blank"
+                      >
+                      <div class="left ellipsis-online ellipsis-online-1">[精选]流动资产的特点及其评估程序.pptx</div>
+                      <div class="tag">最新发布</div>
+                    </a>
+                  </div>
+                  <div class="info-box display-flex">
+                    <div class="info display-flex">
+                      <span class="info-block">09-21</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <a href="https://download.csdn.net/download/weixin_45365017/23959822" target="_blank"
+                    >
+                    <div class="desc ellipsis-online ellipsis-online-1">[精选]流动资产的特点及其评估程序.pptx</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="template-box">
+            <span>©️2020 CSDN</span>
+            <span>皮肤主题: 大白</span>
+            <span> 设计师:CSDN官方博客</span>
+            <span>
+              <a href="https://blog.csdn.net/" class="back-home c-blue c-blue-hover c-blue-focus">返回首页</a>
+            </span>
+          </div>
+          <div class="blog-footer-bottom" style="margin-top:10px;">
+            <div id="copyright-box" class="">
+              <div id="csdn-copyright-footer" class="column small">
+                <ul class="footer-column-t">
+                  <li>
+                    <a href="//www.csdn.net/company/index.html#about" target="_blank">关于我们</a>
+                  </li>
+                  <li>
+                    <a href="//www.csdn.net/company/index.html#recruit" target="_blank">招贤纳士</a>
+                  </li>
+                  <li>
+                    <a href="//www.csdn.net/company/index.html#advertisement" target="_blank">广告服务</a>
+                  </li>
+                  <li>
+                    <a href="https://plugin.csdn.net/" target="_blank">开发助手</a>
+                  </li>
+                  <li>
+                    <img src="./images/tel.png" alt="">
+                    <span>400-660-0108</span>
+                  </li>
+                  <li>
+                    <img src="./images/email.png" alt="">
+                    <a href="mailto:webmaster@csdn.net" target="_blank">kefu@csdn.net</a>
+                  </li>
+                  <li>
+                    <img src="./images/cs.png" alt="">
+                    <a href="https://csdn.s2.udesk.cn/im_client/?web_plugin_id=29181" target="_blank">在线客服</a>
+                  </li>
+                  <li>
+                    工作时间&nbsp;8:30-22:00
+                  </li>
+                </ul>
+                <ul class="footer-column-b">
+                  <li>
+                    <!-- <img src="./images/badge.png" alt=""> -->
+                    <a
+                      href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030143"
+                      rel="noreferrer" target="_blank">公安备案号11010502030143</a></li>
+                  <li><a href="http://beian.miit.gov.cn/publish/query/indexFirst.action" rel="noreferrer"
+                      target="_blank">京ICP备19004658号</a></li>
+                  <li><a href="https://csdnimg.cn/release/live_fe/culture_license.png" rel="noreferrer"
+                      target="_blank">京网文〔2020〕1039-165号</a></li>
+                  <li><a href="https://csdnimg.cn/cdn/content-toolbar/csdn-ICP.png" target="_blank">经营性网站备案信息</a></li>
+                  <li><a href="http://www.bjjubao.org/" target="_blank">北京互联网违法和不良信息举报中心</a></li>
+                  <li><a href="http://www.cyberpolice.cn/" target="_blank">网络110报警服务</a></li>
+                  <li><a href="http://www.12377.cn/" target="_blank">中国互联网举报中心</a></li>
+                  <li><a href="https://download.csdn.net/index.php/tutelage/" target="_blank">家长监护</a></li>
+                  <li><a
+                      href="https://chrome.google.com/webstore/detail/csdn%E5%BC%80%E5%8F%91%E8%80%85%E5%8A%A9%E6%89%8B/kfkdboecolemdjodhmhmcibjocfopejo?hl=zh-CN"
+                      target="_blank">Chrome商店下载</a></li>
+                  <li>©1999-2021北京创新乐知网络技术有限公司</li>
+                  <li><a href="https://www.csdn.net/company/index.html#statement" target="_blank">版权与免责声明</a></li>
+                  <li><a href="https://blog.csdn.net/blogdevteam/article/details/90369522" target="_blank">版权申诉</a></li>
+                  <li><a href="https://img-home.csdnimg.cn/images/20210414021151.jpg" target="_blank">出版物许可证</a></li>
+                  <li><a href="https://img-home.csdnimg.cn/images/20210414021142.jpg" target="_blank">营业执照</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <script src="https://g.csdnimg.cn/common/csdn-footer/csdn-footer.js" data-isfootertrack="false" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.csdn.csdnFooter.options = {
+                el: '.blog-footer-bottom',
+                type: 2
+            }
+        </script>         -->
+      </main>
+
+
+      <aside class="blog_container_aside">
+        <div id="asideProfile" class="aside-box">
+          <div class="profile-intro d-flex">
+            <div class="avatar-box d-flex justify-content-center flex-column">
+              <a href="https://blog.csdn.net/weixin_39786569">
+                <img src="./images/3_weixin_39786569_1553494125.jpg" class="avatar_pic">
+              </a>
+            </div>
+            <div class="user-info d-flex flex-column profile-intro-name-box">
+              <div class="profile-intro-name-boxTop">
+                <a href="https://blog.csdn.net/weixin_39786569" class="" id="uid" title="极客日报">
+                  <span class="name vip-name" username="weixin_39786569">极客日报</span>
+                </a>
+                <span>
+                  <img class="identity" src="./images/vipNew.png" alt="">
+                </span>
+                <span class="flag expert-blog">
+                  <span class="bubble">CSDN认证博客专家</span>
+                </span>
+                <span class="flag company-blog">
+                  <span class="bubble">CSDN认证企业博客</span>
+                </span>
+              </div>
+              <div class="profile-intro-name-boxFooter">
+                <span class="personal-home-page personal-home-years">码龄4年</span>
+                <span class="personal-home-page">
+                  <a class="personal-home-certification" href="https://i.csdn.net/#/uc/profile?utm_source=14998968"
+                    target="_blank" title="暂无认证">
+                    <img src="./images/nocErtification.png" alt="">
+                    暂无认证
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="data-info d-flex item-tiling">
+            <dl class="text-center" title="460">
+              <a href="https://blog.csdn.net/weixin_39786569">
+                <dt><span class="count">460</span></dt>
+                <dd class="font">原创</dd>
+              </a>
+            </dl>
+            <dl class="text-center" title="1026">
+              <a href="https://blog.csdn.net/rank/list/weekly" target="_blank">
+                <dt><span class="count">1026</span></dt>
+                <dd class="font">周排名</dd>
+              </a>
+            </dl>
+            <dl class="text-center" title="138673">
+              <a href="https://blog.csdn.net/rank/list/total" target="_blank">
+                <dt><span class="count">13万+</span></dt>
+                <dd class="font">总排名</dd>
+              </a>
+            </dl>
+            <dl class="text-center" style="min-width:58px" title="2854685">
+              <dt><span class="count">285万+</span></dt>
+              <dd>访问</dd>
+            </dl>
+            <dl class="text-center" title="8级,点击查看等级说明">
+              <dt><a href="https://blog.csdn.net/blogdevteam/article/details/103478461" target="_blank">
+                  <img class="level" src="./images/blog8.png">
+                </a>
+              </dt>
+              <dd>等级</dd>
+            </dl>
+          </div>
+          <div class="item-rank"></div>
+          <div class="data-info d-flex item-tiling">
+            <dl class="text-center" title="38875">
+              <dt><span class="count">3万+</span></dt>
+              <dd>积分</dd>
+            </dl>
+            <dl class="text-center" id="fanBox" title="24201">
+              <dt><span class="count" id="fan">2万+</span></dt>
+              <dd>粉丝</dd>
+            </dl>
+            <dl class="text-center" title="9598">
+              <dt><span class="count">9598</span></dt>
+              <dd>获赞</dd>
+            </dl>
+            <dl class="text-center" title="4154">
+              <dt><span class="count">4154</span></dt>
+              <dd>评论</dd>
+            </dl>
+            <dl class="text-center" title="4730">
+              <dt><span class="count">4730</span></dt>
+              <dd>收藏</dd>
+            </dl>
+          </div>
+          <div class="aside-box-footer">
+            <div class="badge-box d-flex">
+              <div class="badge d-flex">
+                <div class="icon-badge" title="签到新秀">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/qiandao10@240.png" alt="签到新秀">
+                  </div>
+                </div>
+                <div class="icon-badge" title="推荐红人">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/blinkrecomment@240.png" alt="推荐红人">
+                  </div>
+                </div>
+                <div class="icon-badge" title="阅读者勋章Lv2">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/yuedu7@240.png" alt="阅读者勋章Lv2">
+                  </div>
+                </div>
+                <div class="icon-badge" title="持之以恒">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/chizhiyiheng@240.png" alt="持之以恒">
+                  </div>
+                </div>
+                <div class="icon-badge" title="1024勋章">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/1024@240.png" alt="1024勋章">
+                  </div>
+                </div>
+                <div class="icon-badge" title="1024达人勋章">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/1024daren@240.png" alt="1024达人勋章">
+                  </div>
+                </div>
+                <div class="icon-badge" title="勤写标兵Lv4">
+                  <div class="mouse-box">
+                    <img class="medal-img" src="./images/qixiebiaobing4@240.png" alt="勤写标兵Lv4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-intro-name-boxOpration">
+            <div class="opt-letter-watch-box">
+              <a class="bt-button personal-letter" href="https://im.csdn.net/chat/weixin_39786569" target="_blank"
+                rel="noopener">私信</a>
+            </div>
+            <div class="opt-letter-watch-box">
+              <a class="personal-watch bt-button" id="btnAttent">关注</a>
+            </div>
+          </div>
+        </div>
+        <div id="asideSearchArticle" class="aside-box">
+          <div class="aside-content search-comter">
+            <div class="aside-search aside-search-blog">
+              <input type="text" class="input-serch-blog" name="" autocomplete="off" value="" id="search-blog-words"
+                placeholder="搜博主文章">
+              <a class="btn-search-blog">
+                <img src="./images/csdn-sou.png">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="asideCustom" class="aside-box custom-box">
+          <h3 class="aside-title">关注「CSDN」官方微信公众号</h3>
+          <div class="aside-content clearfix">
+            <p><img src="./images/1632295161(1).jpg" alt=""><br></p>
+            <p><b>你关心的，第一时间送达</b> <br></p>
+          </div>
+        </div>
+
+        <div id="asideHotArticle" class="aside-box">
+          <h3 class="aside-title">热门文章</h3>
+          <div class="aside-content">
+            <ul class="hotArticle-list">
+              <li>
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/112315833" target="_blank">
+                  链家程序员怒删公司 9TB 数据，被判 7 年！
+                  <img src="./images/readCountWhite.png" alt="">
+                  <span class="read">45559</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/109597309" target="_blank">
+                  极客日报第5期：华为剥离荣耀 交易价格1000亿元；2020年十大热词出炉：开头看着想笑，后面感动到哭
+                  <img src="./images/readCountWhite.png" alt="">
+                  <span class="read">31351</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/111270764" target="_blank">
+                  编程正式进入中考模式！北京海淀：通过信息技术考试方可毕业
+                  <img src="./images/readCountWhite.png" alt="">
+                  <span class="read">28469</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/109840277" target="_blank">
+                  极客日报第 13 期：因未发项目奖金，一名程序员决定删代码泄愤；2020年最常用密码TOP200出炉，你都用过吗？
+                  <img src="./images/readCountWhite.png" alt="">
+                  <span class="read">27889</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/109734652" target="_blank">
+                  极客日报第10期：官宣！华为正式出售荣耀；圆通回应内鬼致 40 万条个人信息泄露；Win10驱动12月份暂停更新，因为微软的工程师放假
+                  <img src="./images/readCountWhite.png" alt="">
+                  <span class="read">26072</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="asideCategory" class="aside-box flexible-box">
+          <h3 class="aside-title">分类专栏</h3>
+          <div class="aside-content">
+            <ul>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10562829.html">
+                  <img src="./images/20201014180756928.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">极客日报</span>
+                  </span>
+                  <span class="count float-right">204篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10753663.html">
+                  <img src="./images/20201014180756927.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">快讯</span>
+                  </span>
+                  <span class="count float-right">64篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10635054.html">
+                  <img src="./images/20201014180756913.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">CSDN开发者周刊</span>
+                  </span>
+                  <span class="count float-right">13篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_9390082.html">
+                  <img src="./images/20201014180756927.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">首页公告栏</span>
+                  </span>
+                  <span class="count float-right">30篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8926968.html">
+                  <img src="./images/20201014180756923.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">开发</span>
+                  </span>
+                  <span class="count float-right">5篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8931472.html">
+                  <img src="./images/20201014180756919.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">早间资讯</span>
+                  </span>
+                  <span class="count float-right">99篇</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8932171.html">
+                  <img src="./images/20201014180756927.png" alt="" onerror="this.src='./images/20201014180756922.png'">
+                  <span class="title oneline">
+                    <span class="text">极客音频</span>
+                  </span>
+                  <span class="count float-right">134篇</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <p class="text-center">
+            <a class="flexible-btn" data-fbox="aside-archive">
+              <img class="look-more" src="./images/arrowDownWhite.png"
+                alt="">
+              </a>
+          </p> -->
+        </div>
+        <div id="asideNewComments" class="aside-box">
+          <h3 class="aside-title">最新评论</h3>
+          <div class="aside-content">
+            <ul class="newcomment-list">
+              <li>
+                <a class="title text-truncate" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569/article/details/120408914#comments_18383658">极客日报：贾跃亭称FF
+                  91投票战胜三大豪车；苹果正式推送iOS 15系统；欧盟或强制电子设备使用通用充电器</a>
+                <p class="comment ellipsis">
+                  <a href="https://blog.csdn.net/qq_38338428" class="user-name" target="_blank">WeYoung.Tian: </a>
+                  <span class="code-comments">罗永浩吐槽微信广告：封面图与实际内容不符
+                    9月20日，罗永浩发布微博讨论微信朋友圈广告问题。罗永浩表示，其不愿意点开微信广告的一个原因是，品牌方编辑的6~9张缩略广告图有时候确实会有吸引力，但点进去几乎一定看不到那几张图的放大版本，无论是汽车、电子产品还是球鞋都是这样。吐槽“不知道编辑那些页面的品牌方工作人员是怎么想的”。（快科技）
+
+
+
+                    确实，微信里面太严重了，进去各种不符合，噱头太多了。其他平台也存在这种现象。</span>
+                </p>
+              </li>
+              <li>
+                <a class="title text-truncate" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569/article/details/120360735#comments_18383134">极客日报：微信正式宣布开放外部链接；iPhone13预购开启导致苹果官网崩了；特斯拉将向车主提供新版
+                  FSD</a>
+                <p class="comment ellipsis">
+                  <a href="https://blog.csdn.net/leewen5" class="user-name" target="_blank">leewen5: </a>
+                  <span class="code-comments">应该把拼多多链接永久封了。</span>
+                </p>
+              </li>
+              <li>
+                <a class="title text-truncate" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569/article/details/114652665#comments_18381978">极客日报第83期：百度92年程序员因“篡改数据”被抓；运营商辟谣首批
+                  5G 用户被抛弃；特斯拉回应上海工厂摄像头被入侵</a>
+                <p class="comment ellipsis">
+                  <a href="https://taylorswift.blog.csdn.net" class="user-name" target="_blank">Champhoenix: </a>
+                  <span class="code-comments">不错</span>
+                </p>
+              </li>
+              <li>
+                <a class="title text-truncate" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569/article/details/120360735#comments_18381936">极客日报：微信正式宣布开放外部链接；iPhone13预购开启导致苹果官网崩了；特斯拉将向车主提供新版
+                  FSD</a>
+                <p class="comment ellipsis">
+                  <a href="https://taylorswift.blog.csdn.net" class="user-name" target="_blank">Champhoenix: </a>
+                  <span class="code-comments">不错</span>
+                </p>
+              </li>
+              <li>
+                <a class="title text-truncate" target="_blank"
+                  href="https://blog.csdn.net/weixin_39786569/article/details/120341961#comments_18381934">极客日报：QQ可直接从链接进入抖音、淘宝；iPhone13粉色最受欢迎；微软Office
+                  2021将于10月5日推出</a>
+                <p class="comment ellipsis">
+                  <a href="https://taylorswift.blog.csdn.net" class="user-name" target="_blank">Champhoenix: </a>
+                  <span class="code-comments">不错</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="asideNewNps" class="aside-box" style="display: block;">
+          <h3 class="aside-title">您愿意向朋友推荐“博客详情页”吗？</h3>
+          <div class="aside-content">
+            <ul class="newnps-list">
+              <li class="newnps-item" data-type="强烈不推荐">
+                <div class="newnps-img-box">
+                  <img class="newnps-img active" src="./images/npsFeel1.png" alt="">
+                </div>
+                <div class="newnps-text">强烈不推荐</div>
+              </li>
+              <li class="newnps-item" data-type="不推荐">
+                <div class="newnps-img-box">
+                  <img class="newnps-img active" src="./images/npsFeel2.png" alt="">
+                </div>
+                <div class="newnps-text">不推荐</div>
+              </li>
+              <li class="newnps-item" data-type="一般般">
+                <div class="newnps-img-box">
+                  <img class="newnps-img active" src="./images/npsFeel3.png" alt="">
+                </div>
+                <div class="newnps-text">一般般</div>
+              </li>
+              <li class="newnps-item" data-type="推荐">
+                <div class="newnps-img-box">
+                  <img class="newnps-img active" src="./images/npsFeel4.png" alt="">
+                </div>
+                <div class="newnps-text">推荐</div>
+              </li>
+              <li class="newnps-item" data-type="强烈推荐">
+                <div class="newnps-img-box">
+                  <img class="newnps-img active" src="./images/npsFeel5.png" alt="">
+                </div>
+                <div class="newnps-text">强烈推荐</div>
+              </li>
+            </ul>
+            <div class="newnps-form-box">
+              <div class="newnps-form">
+                <input type="text" placeholder="请输入建议或反馈后点击提交" class="newnps-input">
+                <span class="newnps-btn">提交</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="asideArchive" class="aside-box" style="display:block!important; width:300px;">
+          <h3 class="aside-title">最新文章</h3>
+          <div class="aside-content">
+            <ul class="inf_list clearfix">
+              <li class="clearfix">
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/120360735"
+                  target="_blank">极客日报：微信正式宣布开放外部链接；iPhone13预购开启导致苹果官网崩了；特斯拉将向车主提供新版 FSD</a>
+              </li>
+              <li class="clearfix">
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/120341961"
+                  target="_blank">极客日报：QQ可直接从链接进入抖音、淘宝；iPhone13粉色最受欢迎；微软Office 2021将于10月5日推出</a>
+              </li>
+              <li class="clearfix">
+                <a href="https://blog.csdn.net/weixin_39786569/article/details/120322100"
+                  target="_blank">极客日报：三星嘲讽iPhone13：120Hz高刷我们早用上了；华为撤回对OPPO欧洲专利的异议；淘宝搜索崩了登上热搜</a>
+              </li>
+            </ul>
+            <div class="archive-bar"></div>
+            <div class="archive-box">
+              <div class="archive-title">2021</div>
+              <div class="archive-content">
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/09" target="_blank">
+                    <span class="time">09月</span>
+                    <span class="count">15篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/08" target="_blank">
+                    <span class="time">08月</span>
+                    <span class="count">36篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/07" target="_blank">
+                    <span class="time">07月</span>
+                    <span class="count">46篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/06" target="_blank">
+                    <span class="time">06月</span>
+                    <span class="count">30篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/05" target="_blank">
+                    <span class="time">05月</span>
+                    <span class="count">21篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/04" target="_blank">
+                    <span class="time">04月</span>
+                    <span class="count">30篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/03" target="_blank">
+                    <span class="time">03月</span>
+                    <span class="count">18篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/02" target="_blank">
+                    <span class="time">02月</span>
+                    <span class="count">18篇</span>
+                  </a>
+                </div>
+                <div class="archive-item">
+                  <a href="https://blog.csdn.net/weixin_39786569/article/month/2021/01" target="_blank">
+                    <span class="time">01月</span>
+                    <span class="count">33篇</span>
+                  </a>
+                </div>
+              </div>
+              <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39786569/article/month/2020/12"
+                  target="_blank"><span class="year">2020年</span><span class="num">60篇</span></a></div>
+              <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39786569/article/month/2019/12"
+                  target="_blank"><span class="year">2019年</span><span class="num">168篇</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div id="footerRightAds" class="isShowFooterAds">
+          <div class="aside-box">
+            <div id="kp_box_57" data-pid="57">
+              <!-- <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+              <!-- PC-博客详情页-矩形-左下视窗（自适应） -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1076724771190722"
+                data-ad-slot="1894159733" data-ad-format="auto" data-full-width-responsive="true"
+                data-adsbygoogle-status="done"></ins>
+              <!-- <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script> -->
+              <!-- <img class="pre-img-lasy" style="display: block;width: 0px;height: 0px;" src="./images/1.png"> -->
+            </div>
+          </div>
+        </div>
+        <!-- 详情页显示目录 -->
+        <!--文章目录-->
+        <div id="asidedirectory" class="aside-box">
+          <div class="groupfile" id="directory">
+            <h3 class="aside-title">目录</h3>
+            <div class="align-items-stretch group_item">
+              <div class="pos-box">
+                <div class="scroll-box">
+                  <div class="toc-box">
+                    <ol>
+                      <li class="active"><a href="#t0">一分钟速览新闻点！</a></li>
+                      <li class=""><a href="#t1">国内新闻</a></li>
+                      <li class=""><a href="#t2">国际要闻</a></li>
+                      <li class=""><a href="#t3">程序员专区</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+
+    <div class="recommend-right  align-items-stretch clearfix" id="rightAside" data-type="recommend"
+      style="height: auto !important;">
+      <aside class="recommend-right_aside" style="height: auto !important;">
+        <div id="recommend-right">
+          <div class="flex-column aside-box groupfile" id="groupfile" style="display: block; max-height: 468.5px;">
+            <div class="groupfile-div" style="max-height: 468.5px;">
+              <h3 class="aside-title">目录</h3>
+              <div class="align-items-stretch group_item">
+                <div class="pos-box">
+                  <div class="scroll-box">
+                    <div class="toc-box">
+                      <ol>
+                        <li class="active"><a href="#t0">一分钟速览新闻点！</a></li>
+                        <li class=""><a href="#t1">国内新闻</a></li>
+                        <li class=""><a href="#t2">国际要闻</a></li>
+                        <li class=""><a href="#t3">程序员专区</a></li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="recommendAdBox">
+            <div id="kp_box_479" data-pid="479">
+              <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- PC-博客详情页-右侧视窗（自适应） -->
+              <ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-1076724771190722"
+                data-ad-slot="3484057394" data-ad-format="auto" data-full-width-responsive="true"
+                data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_1_expand"
+                  style="border: none; height: 600px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"
+                  tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor"
+                    style="border: none; height: 600px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe
+                      id="aswift_1" name="aswift_1"
+                      style="left:0;position:absolute;top:0;border:0;width:300px;height:600px;"
+                      sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                      width="300" height="600" frameborder="0"
+                      src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1076724771190722&amp;output=html&amp;h=600&amp;slotname=3484057394&amp;adk=4282658216&amp;adf=3467014665&amp;pi=t.ma~as.3484057394&amp;w=300&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1632288103&amp;rafmt=1&amp;psa=1&amp;format=300x600&amp;url=https%3A%2F%2Fblog.csdn.net%2Fcsdngeeknews%2Farticle%2Fdetails%2F120408914&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=4&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiOTMuMC40NTc3LjgyIixbXSxudWxsLG51bGwsIjY0Il0.&amp;tt_state=W3siaXNzdWVyT3JpZ2luIjoiaHR0cHM6Ly9hdHRlc3RhdGlvbi5hbmRyb2lkLmNvbSIsInN0YXRlIjo3fV0.&amp;dt=1632288102893&amp;bpp=2&amp;bdt=527&amp;idt=560&amp;shv=r20210916&amp;mjsv=m202109200101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D04c8a141ad23a103-2264a6371ccb009d%3AT%3D1628240977%3ART%3D1629877246%3AS%3DALNI_Mb7CYPCUmXC2JvKTA9W1azD3plF-w&amp;prev_fmts=300x600&amp;correlator=5895222256166&amp;frm=20&amp;pv=1&amp;ga_vid=1688199537.1630029650&amp;ga_sid=1632288103&amp;ga_hid=1962282782&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;adx=1189&amp;ady=270&amp;biw=1533&amp;bih=937&amp;scr_x=0&amp;scr_y=0&amp;eid=21067496&amp;oid=3&amp;pvsid=4116897826659481&amp;pem=223&amp;eae=0&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1040%2C1550%2C937&amp;vis=1&amp;rsz=%7Co%7CpeE%7C&amp;abl=NS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=oKETazRCCF&amp;p=https%3A//blog.csdn.net&amp;dtd=566"
+                      marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"
+                      allowfullscreen="true" data-google-container-id="a!2"
+                      data-google-query-id="CNja4oTrkfMCFVUuswAdDRADww"
+                      data-load-complete="true"></iframe></ins></ins></ins>
+            
+              <!-- <img class="pre-img-lasy"
+                src="./images/1.png"
+                style="display: block;width: 0px;height: 0px;"> -->
+            </div>
+          </div>
+          <div class="aside-box kind_person d-flex flex-column">
+            <h3 class="aside-title">分类专栏</h3>
+            <div class="align-items-stretch kindof_item" id="kind_person_column">
+              <div class="aside-content">
+                <ul>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10562829.html"
+                      >
+                      <img
+                        src="./images/20201014180756928.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">极客日报</span>
+                      </span>
+                      <span class="count float-right">204篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10753663.html"
+                      >
+                      <img
+                        src="./images/20201014180756927.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">快讯</span>
+                      </span>
+                      <span class="count float-right">64篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_10635054.html"
+                      >
+                      <img
+                        src="./images/20201014180756913.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">CSDN开发者周刊</span>
+                      </span>
+                      <span class="count float-right">13篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_9390082.html"
+                      >
+                      <img
+                        src="./images/20201014180756927.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">首页公告栏</span>
+                      </span>
+                      <span class="count float-right">30篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8926968.html"
+                      >
+                      <img
+                        src="./images/20201014180756923.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">开发</span>
+                      </span>
+                      <span class="count float-right">5篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8931472.html"
+                      >
+                      <img
+                        src="./images/20201014180756919.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">早间资讯</span>
+                      </span>
+                      <span class="count float-right">99篇</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="clearfix" target="_blank" href="https://blog.csdn.net/weixin_39786569/category_8932171.html"
+                      >
+                      <img
+                        src="./images/20201014180756927.png"
+                        alt=""
+                        onerror="this.src='./images/20201014180756922.png'">
+                      <span class="title oneline">
+                        <span class="text">极客音频</span>
+                      </span>
+                      <span class="count float-right">134篇</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+
+</html>
