@@ -19,5 +19,5 @@
 
 ## 如果觉得不错，请赏一个Star！🧡
 -----
-github pdf文档推荐
-https://github.com/itdevbooks/pdf
+github pdf文档推荐:
+<a href="https://github.com/itdevbooks/pdf" target="_blank">https://github.com/itdevbooks/pdf</pdf>
