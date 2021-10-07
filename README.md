@@ -16,6 +16,8 @@
 ## 部署
 项目本身就是一些很简单的html网页，放到任意服务器上即可运行。
 
+
+## 如果觉得不错，请赏一个Star！
 -----
 github pdf文档推荐
 https://github.com/itdevbooks/pdf
