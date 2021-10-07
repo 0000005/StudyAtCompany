@@ -1,6 +1,6 @@
 # 程序员摸鱼神器！（Study at Company）
 
-体验地址：https://study-at-company.vercel.app/
+**体验地址：** https://study-at-company.vercel.app/
 
 当你在公司看pdf学习最新的前沿技术时，是不是提心吊胆害怕领导发现？害怕同事围观？
 
@@ -17,7 +17,7 @@
 项目本身就是一些很简单的html网页，放到任意服务器上即可运行。
 
 
-## 如果觉得不错，请赏一个Star！
+## 如果觉得不错，请赏一个Star！🧡
 -----
 github pdf文档推荐
 https://github.com/itdevbooks/pdf
