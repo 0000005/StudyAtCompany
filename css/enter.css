@@ -1330,7 +1330,8 @@ main div.blog-content-box pre.prettyprint .article-header div.article-title-box 
 	color:#222226;
 	font-weight:600;
 	margin:0;
-	word-break:break-all
+	word-break:break-all;
+	line-height: 1.625;
 }
 main div.blog-content-box pre.prettyprint .article-header div.article-info-box,main div.blog-content-box .article-header-box .article-header div.article-info-box {
 	position:relative;
@@ -1626,6 +1627,10 @@ main div.blog-content-box .padding24 {
 main div.blog-content-box article {
 	position:relative;
 	padding-top:16px
+}
+#pdfCanvas{
+	max-height: 800px;
+	overflow-y: auto;
 }
 main div.blog-content-box article .table-box {
 	overflow-x:auto;
@@ -7679,4 +7684,51 @@ body .next-word {
 }
 #csdn-copyright-footer.dark.side .copyright-footer-middle li a {
 	color:#ccccd8
+}
+.csdn-toolbar-head{
+	position: fixed !important;
+  z-index: 1993;
+}
+#pdfCanvas::-webkit-scrollbar { 
+	width: 0 !important 
+}
+#pdfCanvas { 
+	-ms-overflow-style: none; 
+}
+#pdfCanvas { 
+	overflow: -moz-scrollbars-none; 
+}
+#selectFile{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(24 24 24 / 79%);
+	z-index: 999;
+}
+#selectFile .close{
+	font-size: 20px;
+	position: absolute;
+    right: 10px;
+    top: 5px;
+	cursor: pointer;
+}
+.wrap-file{
+	width: 480px;
+    /* height: 278px; */
+    padding: 16px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+    border-radius: 5px;
+}
+.wrap-file input{
+	margin-top: 35px;
+	margin-bottom: 26px;
+}
+.wrap-file img{
+	margin: 0 auto;
 }

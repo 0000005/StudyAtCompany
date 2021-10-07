@@ -5,13 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>极客日报：贾跃亭称FF 91投票战胜三大豪车；苹果正式推送iOS 15系统；欧盟或强制电子设备使用通用充电器</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/toolbar-default.css">
   <link rel="stylesheet" href="./css/sandalstrap.css">
   <link rel="stylesheet" href="./css/detail-enter.css">
   
   <link rel="stylesheet" href="./css/enter.css">
+  <script>
+    window.onscroll = function () {
+     var scrollTop = document.documentElement.scrollTop;
+    if (scrollTop != 0) {
+        document.getElementById("csdn-toolbar").classList.add("csdn-toolbar-head");
+    }else{
+      document.getElementById("csdn-toolbar").classList.remove("csdn-toolbar-head");
+    }   
+  }
+  </script>
 </head>
 
 <body class='nodata'>
@@ -258,56 +268,10 @@
           </div>
 
           <article class="baidu_pl">
-            <input type="file" id="file">
-            <h2>Rendered pdf:</h2>
-            <canvas id="pdfCanvas" width="840" height="900"></canvas>
+            <!-- <input type="file" id="file"> -->
+            <div id="pdfCanvas"></div>
           </article>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-          <script>
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.js';
-            document.getElementById('file').onchange = function(event) {
-              var file = event.target.files[0];
-              var fileReader = new FileReader();
-              console.log(file,fileReader)
-              fileReader.onload = function() {
-                var typedarray = new Uint8Array(this.result);
-                console.log(typedarray);
-                const loadingTask = pdfjsLib.getDocument(typedarray);
-                loadingTask.promise.then(pdf => {
-                  // The document is loaded here...
-                  //This below is just for demonstration purposes showing that it works with the moderen api
-                  
-                  pdf.getPage(2).then(function(page) {
-                    console.log('Page loaded');
-
-                    var scale = 1.5;
-                    var viewport = page.getViewport({
-                      scale: scale
-                    });
-
-                    var canvas = document.getElementById('pdfCanvas');
-                    var context = canvas.getContext('2d');
-                    canvas.height = viewport.height;
-                    canvas.width = 840;
-
-                    // Render PDF page into canvas context
-                    var renderContext = {
-                      canvasContext: context,
-                      viewport: viewport
-                    };
-                    var renderTask = page.render(renderContext);
-                    renderTask.promise.then(function() {
-                      console.log('Page rendered');
-                    });
-
-                  });
-                  //end of example code
-                });
-
-              }
-              fileReader.readAsArrayBuffer(file);
-            }
-          </script>
+          
         </div>
         <!-- <div class="more-toolbox-new more-toolbox-active" id="toolBarBox">
           <div class="left-toolbox" style="position: fixed; z-index: 999; left: 370px; bottom: 0px; width: 820px;">
@@ -1308,13 +1272,7 @@
               </div>
             </div>
           </div>
-          <!-- <script src="https://g.csdnimg.cn/common/csdn-footer/csdn-footer.js" data-isfootertrack="false" type="text/javascript"></script>
-        <script type="text/javascript">
-            window.csdn.csdnFooter.options = {
-                el: '.blog-footer-bottom',
-                type: 2
-            }
-        </script>         -->
+         
       </main>
 
 
@@ -1971,6 +1929,84 @@
       </aside>
     </div>
   </div>
+
+  <div id="selectFile" style="display: none;">
+    
+    <div class="wrap-file">
+      <span class="close" id="close">×</span>
+      <input type="file" id="file">
+      <img src="./images/loading.gif" alt="" id="loading" style="display: none;">
+    </div>
+  </div>
+  <script src="./build/jquery.min.js"></script>
+  <script>
+    $(document).keydown(function(event){
+      console.log("event.keyCod",event.keyCode)
+      if(event.keyCode == 18){
+        // alert('ctrl键'); 
+        document.getElementById("selectFile").style.display="block"
+      }
+    });
+    $("#close").click(function(){
+      document.getElementById("selectFile").style.display="none"
+    })
+  </script>
+  <script src="./build/pdf.js"></script>
+  <script>
+    
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './build/pdf.worker.js';
+    document.getElementById('file').onchange = function(event) {
+      document.getElementById("loading").style.display='block';
+      var file = event.target.files[0];
+      var fileReader = new FileReader();
+      // console.log(file,fileReader)
+      fileReader.onload = function() {
+        var typedarray = new Uint8Array(this.result);
+        // console.log(typedarray);
+        const loadingTask = pdfjsLib.getDocument(typedarray);
+        loadingTask.promise.then(pdf => {
+          // The document is loaded here...
+          //This below is just for demonstration purposes showing that it works with the moderen api
+          // console.log("========",pdf.numPages)
+          var canvas = document.getElementById('pdfCanvas');
+          document.getElementById('pdfCanvas').innerHTML='';
+          for(var i=1; i<=pdf.numPages; i++){
+            pdf.getPage(i).then(function(page) {
+            // console.log('Page loaded');
+
+            var scale = 1.8;
+            var viewport = page.getViewport({
+              scale: scale
+            });
+
+            
+            var pdfPage = document.createElement('canvas');
+            canvas.appendChild(pdfPage)
+            var context = pdfPage.getContext('2d');
+            pdfPage.height = viewport.height;
+            pdfPage.width = viewport.width;
+            
+            // Render PDF page into canvas context
+            var renderContext = {
+              canvasContext: context,
+              viewport: viewport
+            };
+            var renderTask = page.render(renderContext);
+            renderTask.promise.then(function() {
+              console.log('Page rendered');
+              document.getElementById("loading").style.display='none';
+              document.getElementById("selectFile").style.display='none';
+            });
+
+          });
+          }
+          //end of example code
+        });
+
+      }
+      fileReader.readAsArrayBuffer(file);
+    }
+  </script>
 </body>
 
 </html>
