@@ -6,9 +6,9 @@
 
 现在你不再需要担心了，我们模拟了CS某N的界面，将pdf嵌入其中。
 
-**领导以为你以为公司找研发资料，实际上你在搞学习摸鱼！**
+**领导以为你在找研发资料，实际上你在搞学习摸鱼！**
 
-<img src="https://raw.githubusercontent.com/81519434/StudyAtCompany/master/images/snapshot.png">
+![snapshot.png](https://i.loli.net/2021/10/07/epOANKcmZFwJGl4.png)
 
 ## 使用方法
 进入页面后按住`alt`键，唤出控制面板，选择要加载的本地pdf。
