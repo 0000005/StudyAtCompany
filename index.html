@@ -256,6 +256,7 @@
 
           <article class="baidu_pl">
             <!-- <input type="file" id="file"> -->
+            <div id="use-tips"><b>使用方法：按住alt键，唤出控制面板，选择要加载的本地pdf。</b><div>
             <div id="pdfCanvas"></div>
           </article>
 
@@ -1644,7 +1645,7 @@
 
     <div class="wrap-file">
       <span class="close" id="close">×</span>
-      <input type="file" id="file">
+      <input type="file" id="file" accept=".pdf">
       <img src="./images/loading.gif" alt="" id="loading" style="display: none;">
     </div>
   </div>
@@ -1655,6 +1656,7 @@
       if (event.keyCode == 18) {
         // alert('ctrl键'); 
         document.getElementById("selectFile").style.display = "block"
+        document.getElementById("use-tips").style.display = "none"
       }
     });
     $("#close").click(function () {
